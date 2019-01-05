@@ -1,6 +1,7 @@
 # Diy monitor mount with auto-rotating screen
 
-Auto-rotate your screen with the help of arduino or any other microcontroller and MPU-6050 to get the angle of screen.
+Auto-rotate your screen with the help of arduino or any other microcontroller and MPU-6050 to get the angle of screen. 
+This will eliminate the need when you rotate your screen to go to display settings and then change monitor orientation.
 
 Connections:
 
