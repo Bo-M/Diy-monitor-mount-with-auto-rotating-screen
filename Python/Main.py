@@ -4,7 +4,7 @@ import os
 path = os.getcwd()
 
 arduino = serial.Serial('COM3', 9600, timeout=.1)
-print(path)
+#print(path)
 while True:
     data = arduino.readline()[:-2]
     if data:

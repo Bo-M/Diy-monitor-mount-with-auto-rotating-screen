@@ -1,9 +1,8 @@
-
 #include <MPU6050_tockn.h>
 #include <Wire.h>
 
 MPU6050 mpu6050(Wire);
-int v, prethodna_poz; //1=vertical, 0=horizontal
+int v, last_position; //1=vertical, 0=horizontal
 
 void setup() {
   Serial.begin(9600);
@@ -20,7 +19,7 @@ void loop() {
   else {
     v = 1;
   }
-  if (v != prethodna_poz) {
+  if (v != last_position) {
     if ( v == 0) {
       Serial.println("horizontal");
 
